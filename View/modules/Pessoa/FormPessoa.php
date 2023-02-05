@@ -16,15 +16,16 @@
 
 <form method="post" action="/pessoa/form/save">
 
-<label> for="nome"> Nome:</label>
+<label for="nome"> Nome:</label>
 <input id="nome" name="nome" type="text"/>
 
-<label> for="cpf">CPF:</label>
-<input id="cpf" name="cpf" type="numberS"/>
+<label for="cpf">CPF:</label>
+<input id="cpf" name="cpf" type="number"/>
 
-<label> for="data_nascimento"Data Nascimento:</label>
+<label for="data_nascimento">Data Nascimento:</label>
 <input id="data_nacimento" name="data_nascimento" type="data"/>
 <button type="submit"> Salvar</button>
+</form>
 </fieldset>
 
          

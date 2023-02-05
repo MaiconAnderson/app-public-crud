@@ -10,20 +10,19 @@ switch($url)
         echo "página inicial";
         break;
 
-        case '/pessoa':
-            PessoaController::index();
-            break;
-            
-            case '/pessoa/form';
-           
-            PessoaController::form();
-            break;
-           
-            case '/pessoa/form/save'
-            
-            PessoaController::save();
-                        break;
-          default:
-          echo "erro 404";
-
+    case '/pessoa':
+        PessoaController::index();
+        break;
+        
+    case '/pessoa/form':
+        PessoaController::form();
+        break;
+        
+    case '/pessoa/form/save':
+        PessoaController::save();
+        break;
+    
+    default:
+        echo "erro 404";
+        break;
 }

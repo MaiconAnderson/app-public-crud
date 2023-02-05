@@ -7,9 +7,9 @@ class PessoaDAO
     public function __construct()
     {
         $dsn = "mysql:host=localhost:3306;dbname=db_mvc";
-       $this-> $conexao = new PDO($dns, 'root', '#MySQL_dev_2023@');
+        $this->conexao = new PDO($dns, 'root', '#MySQL_dev_2023@');
     }
-    public function isnsert(PessoaModel $model)
+    public function insert(PessoaModel $model)
     {
         $sql = "INSERT INTO pessoa (nome, cpf, data_nascimento) VALUES (?,?,?)";
 
@@ -26,8 +26,8 @@ class PessoaDAO
     }
     public function select()
     {
-$sql = "SELECT * FROM pessoa"
-$stmt = $this->conexao->prepare($sql);
-$stmt->execute();
+        $sql = "SELECT * FROM pessoa";
+        $stmt = $this->conexao->prepare($sql);
+        $stmt->execute();
     }
 }
