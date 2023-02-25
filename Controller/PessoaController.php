@@ -14,6 +14,7 @@ class PessoaController
     {
        include 'Model/PessoaModel.php'; 
        $model = new PessoaModel();
+       
        $model->nome = $_POST['nome'];
        $model->cpf = $_POST['cpf'];
        $model->data_nascimento = $_POST['data_nascimento'];
